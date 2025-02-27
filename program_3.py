@@ -9,3 +9,6 @@
 # The amount of state sales tax.
 # The total sales tax (county plus state)
 # Use at least one function with input and output in this program
+
+def get_sales():
+    sales

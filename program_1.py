@@ -21,9 +21,10 @@ def randDice():
 #Mainline, under which the randDice() function runs 100 times adding the results to the empty
 #list rollContainer so that the average can be calculated.
 if __name__ == "__main__":
-    rollContainer = []
-    for i in range(100):
-        randDice()
-        rollContainer.append(randDice())
+    def main():
+        rollContainer = []
+        for i in range(100):
+            randDice()
+            rollContainer.append(randDice())
 #Calculate average and print.
-    print(f"{sum(rollContainer) / 100:.2f}")
+        print(f"{sum(rollContainer) / 100:.2f}")
